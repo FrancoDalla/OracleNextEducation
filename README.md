@@ -18,5 +18,6 @@ Este challenge consiste en una aplicación que encripta textos.
     "gaitober" -> "gato"
   + La página debe tener campos para incersión del texto que será encriptado o desencriptado, y el usuario debe poder      escoger entra ambas opciones.
   + El resultado debe ser mostrado en pantalla.
+
 **EXTRAS:**
-  + Un botón que copie el texto encriptado/desencriptado para la sección de transferencia, o sea que tenga la misma        funcionalidad del ctrl+c o de la opción copiar del menu de aplicaciones.
+  + Un botón que copie el texto encriptado/desencriptado para la sección de transferencia, o sea que tenga la misma funcionalidad del ctrl+c o de la opción copiar del menu de aplicaciones.

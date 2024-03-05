@@ -10,12 +10,19 @@
             <img id="logo" src="./resources/Logo.png">
         </header>
         <main>
-            <form>
-                <textarea cols="70" rows="110" id="mensaje"></textarea>
+
+            <form id="mensaje">
+                <textarea cols="70" rows="110" id="mensajeje"></textarea>
+                <div class="cajaBotones">
+                    <input type="submit" value="Encriptar texto" class="enviarEncriptado">
+                    <input type="submit" value="Desencriptar texto" class="enviarDesencriptado">
+                    <button action="javascript:buttonTest()">test</button>
+                </div>
             </form>
-            <div class="areaMuestra">
-                
+
+            <div class="areaMuestra">    
                 <img id="monigote" src="./resources/Muñeco.png">
+                
                 <div class="cajaTexto">
                     <p class="textoCajaTexto">
                         Ningún mensaje fue encontrado
@@ -28,5 +35,7 @@
             </div>
 
         </main>
+
+        <script src="app.js"></script> 
     </body>
 </html>

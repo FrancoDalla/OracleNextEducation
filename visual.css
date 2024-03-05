@@ -14,33 +14,37 @@ body{
 
 main{   
 }
+
 textarea{
     resize:none;
     background-color: rgba(0,0,0,0);
     border:none;
     outline:none;
+    width:600px;
+    height:600px;
 }
+
 .areaMuestra{
     position: absolute;
-    width: 20%;
-    height: 100%;
-    right:30%;
+    width: 350px;
+    height: 600px;
+    right: 50px;
     top: 10%;
     background-color: #FFFFFF;
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
     border-radius: 32px;
 }
+
 #monigote{
     position: absolute;
-    width: 336px;
-    height: 304px;
-    left: 0%;
-    top: 20%;
+    width: auto;
+    height: auto;
+    top:15%
 }
 
 .cajaTexto{
-    margin-top: 150%;
-    margin-left: 10%;
+    position:absolute;
+    margin-top: 120%;
     width: auto;
     height: auto;
 }
@@ -54,7 +58,7 @@ height: 58px;
 font-family: 'Inter';
 font-style: normal;
 font-weight: 700;
-font-size: 24px;
+font-size: 80%;
 line-height: 120%;
 /* or 29px */
 text-align: center;
@@ -78,7 +82,7 @@ height: 48px;
 font-family: 'Inter';
 font-style: normal;
 font-weight: 400;
-font-size: 16px;
+font-size: 80%;
 line-height: 150%;
 /* or 24px */
 text-align: center;
@@ -92,4 +96,31 @@ flex: none;
 order: 1;
 align-self: stretch;
 flex-grow: 0;
+}
+
+.cajaBotones{
+    position:absolute;
+    left:25%
+}
+
+.enviarEncriptado{
+    width:250px;
+    height: 50px;
+    background:#0A3871;
+    font-size: 20px;
+    font-weight: bold;
+    color: #F3F5FC;
+    border-radius: 20px;
+    cursor:pointer;
+}
+
+.enviarDesencriptado{
+    width:250px;
+    height: 50px;
+    background: #EFF1FA;
+    font-size: 20px;
+    font-weight: bold;
+    color: #609ED4;
+    border-radius: 20px;
+    cursor:pointer;    
 }

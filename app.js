@@ -22,6 +22,8 @@ function mostrarEnPantalla(){
     document.getElementById('textBox').className = 'cajaTextoChange';
     let texto = document.getElementById('muestraTexto');
     texto.className = "textoMuestra";
-    texto.innerHTML = message;
+    message = message.replace("a","pop")
+    message.replace("o","Si ves esto esta mal :/");
+    texto.innerHTML = message;    
     alert(message);
 }

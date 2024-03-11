@@ -1,23 +1,29 @@
 <!DOCTYPE html>
 <html lang="es";>
+
 	<head>
         <meta charset="UTF-8">
         <title>Encriptador</title>
         <link rel="stylesheet" href="visual.css">
     </head>
+
     <body>
+        
         <header class="headerClass">
             <img id="logo" src="./resources/Logo.png">
         </header>
+
         <main>
 
             <form>
                 <textarea cols="70" rows="110" id="mensaje" required placeholder="Ingrese el texto aqui"></textarea>
+                
                 <div class="cajaBotones">
                     <button id="encriptado" onclick="mostrarEnPantalla();"  type="button" class="enviarEncriptado">Encriptar texto</button>
                     <button id="desencriptado" onclick="mostrarEnPantalla();"   type="button" class="enviarDesencriptado">Desencriptar texto</button>
                     <button id="test" onclick="buttonTest();" type="button">Start</button>
                 </div>
+                
             </form>
 
             <div class="areaMuestra">    
@@ -35,5 +41,6 @@
         </main>
 
         <script src="app.js"></script> 
+    
     </body>
 </html>

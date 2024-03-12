@@ -21,7 +21,36 @@ function crearBoton(divName){
     let text = document.createTextNode("COPIAR");
     buttonCopy.className="button copyButton";
     buttonCopy.appendChild(text);
+    buttonCopy.addEventListener("click", copyFunction);
     auxDiv.appendChild(buttonCopy);
+    crearBoton = fufufu;
+}
+
+function copyFunction(){
+    var copyText = document.getElementById("muestraTexto");
+    navigator.clipboard.writeText(copyText.innerHTML);
+}
+
+function fufufu(){
+
+}
+
+function encrypt(text){
+    /*let reemplazo = {
+        a:'av',
+        e:'ev',
+        i:'iv',
+        o:'ov',
+        u:'uv'
+    };
+    var encryptText = text.replace(/[aeiou]/gi, reemplazo);*/
+    let encryptText = text
+        .replaceAll('a', 'av')
+        .replaceAll('e', 'ev')
+        .replaceAll('i', 'iv')
+        .replaceAll('o', 'ov')
+        .replaceAll('u', 'uv');
+    alert(encryptText);
 }
 
 function mostrarEnPantalla(){
@@ -34,7 +63,4 @@ function mostrarEnPantalla(){
     texto.className = "textoMuestra";
     texto.innerHTML = message;    
     alert(message);
-}
-function botonCopiar(){
-
 }

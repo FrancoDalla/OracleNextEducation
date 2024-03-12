@@ -16,17 +16,15 @@
         <main>
 
             <form>
-                <textarea cols="70" rows="110" id="mensaje" required placeholder="Ingrese el texto aqui"></textarea>
-                
+                <textarea cols="70" rows="110" id="mensaje" required placeholder="Ingrese el texto aqui"></textarea>             
                 <div class="cajaBotones">
-                    <button id="encriptado" onclick="mostrarEnPantalla();"  type="button" class="enviarEncriptado">Encriptar texto</button>
-                    <button id="desencriptado" onclick="mostrarEnPantalla();"   type="button" class="enviarDesencriptado">Desencriptar texto</button>
-                    <button id="test" onclick="buttonTest();" type="button">Start</button>
-                </div>
-                
+                    <button id="encriptado" onclick="mostrarEnPantalla();"  type="button"   class="button encryptButton">Encriptar texto</button>
+                    <button id="desencriptado" onclick="mostrarEnPantalla();"  type="button" class="button decryptButton">Desencriptar texto</button>
+                </div>            
             </form>
 
             <div class="areaMuestra">    
+
                 <img id="monigote" src="./resources/Muñeco.png">
                 
                 <div id="textBox" class="cajaTexto">
@@ -36,7 +34,12 @@
                     </p>
                 </div>
 
+                <div id="botonCopiar" class="areaBoton">
+
+                </div>
+
             </div>
+
 
         </main>
 

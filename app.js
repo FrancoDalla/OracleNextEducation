@@ -15,15 +15,26 @@ function encriptarTexto(){
 
 }
 
+function crearBoton(divName){
+    let auxDiv = document.getElementById(divName);
+    let buttonCopy = document.createElement("BUTTON");
+    let text = document.createTextNode("COPIAR");
+    buttonCopy.className="button copyButton";
+    buttonCopy.appendChild(text);
+    auxDiv.appendChild(buttonCopy);
+}
+
 function mostrarEnPantalla(){
     let message = document.getElementById("mensaje").value;
     let img = document.getElementById('monigote');
     img.style.visibility = 'hidden';
     document.getElementById('textBox').className = 'cajaTextoChange';
+    crearBoton("botonCopiar");
     let texto = document.getElementById('muestraTexto');
     texto.className = "textoMuestra";
-    message = message.replace("a","pop")
-    message.replace("o","Si ves esto esta mal :/");
     texto.innerHTML = message;    
     alert(message);
+}
+function botonCopiar(){
+
 }

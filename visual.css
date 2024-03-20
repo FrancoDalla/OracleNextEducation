@@ -169,7 +169,7 @@ flex-grow: 0;
     background:rgba(0,0,0,0)
 }
 
-@media screen and (max-width:480px){
+@media screen and (max-width:576px){
     
     #mensaje{
         width:400px;

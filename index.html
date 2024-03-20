@@ -3,6 +3,7 @@
 
 	<head>
         <meta charset="UTF-8">
+        <meta name = "viewport" content="width-device-width">
         <title>Encriptador</title>
         <link rel="stylesheet" href="visual.css">
     </head>
@@ -18,8 +19,8 @@
             <form>
                 <textarea cols="70" rows="110" id="mensaje" required placeholder="Ingrese el texto aqui"></textarea>             
                 <div class="cajaBotones">
-                    <button id="encriptado" onclick="encrypt('murcielago');"  type="button"   class="button encryptButton">Encriptar texto</button>
-                    <button id="desencriptado" onclick="mostrarEnPantalla();"  type="button" class="button decryptButton">Desencriptar texto</button>
+                    <button id="encriptado" onclick="encrypt();"  type="button"   class="button encryptButton">Encriptar texto</button>
+                    <button id="desencriptado" onclick="desEncrypt();"  type="button" class="button decryptButton">Desencriptar texto</button>
                 </div>            
             </form>
 
